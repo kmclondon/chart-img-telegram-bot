@@ -1,6 +1,6 @@
 import log from './logger'
 import qs from 'query-string'
-import config from '../../config.json' assert { type: 'json' }
+import config from '../../config.json'  { type: 'json' }
 
 const BASE_API_URL =
   config.override?.chartImgApiURL || 'https://api.chart-img.com'

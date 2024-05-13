@@ -1,5 +1,5 @@
 import procError from './procError'
-import config from '../../config.json' assert { type: 'json' }
+import config from '../../config.json'  { type: 'json' }
 
 import { sendChatAction, editAttachMessageMedia } from '../helper/telegram'
 import { InvalidCallbackDataError } from '../error'

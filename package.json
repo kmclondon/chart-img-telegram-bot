@@ -4,11 +4,11 @@
   "description": "chart-img telegram bot",
   "author": "CHART-IMG <developer@chart-img.com>",
   "type": "module",
-  "private": true,
+  "private": true,  
   "scripts": {
     "start": "npm run ngrok -- --port 8080 -t & npm run server-local -- --ip 127.0.0.1 --port 8080",
     "ngrok": "node --no-warnings src/setup/ngrok",
-    "setup-telegram": "node --no-warnings src/setup/telegram",
+    "setup-telegram": "node --es-module-specifier-resolution=node --no-warnings src/setup/telegram",
     "server-local": "npx wrangler dev",
     "publish-server-cf": "npx wrangler deploy",
     "prettier": "prettier --write '**/*.{js,json,md}'"

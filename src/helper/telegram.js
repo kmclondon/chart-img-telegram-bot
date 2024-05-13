@@ -1,5 +1,5 @@
 import log from './logger.js'
-import config from '../../config.json' assert { type: 'json' }
+import config from '../../config.json'  { type: 'json' }
 
 const BASE_API_URL = 'https://api.telegram.org'
 

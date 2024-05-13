@@ -3,16 +3,16 @@
   "/chart": {
     "intervals": ["5m", "15m", "1h", "4h", "1D", "1W"],
     "default": {
-      "symbol": "CAPITALCOM:US100",
-      "interval": "1D",
+      "symbol": "BINANCE:BTCUSDT",
+      "interval": "1h",
       "theme": "dark"
     }
   },
   "/crypto": {
     "intervals": ["5m", "15m", "1h", "4h", "1D", "1W"],
     "default": {
-      "symbol": "CAPITALCOM:CIX",
-      "interval": "1D",
+      "symbol": "BINANCE:BTCUSDT",
+      "interval": "1h",
       "theme": "dark"
     },
     "inputs": [
@@ -498,7 +498,7 @@
   "messages": [
     {
       "name": "/start",
-      "text": "Hello, I am CHART-IMG Bot \uD83E\uDD16!\r\n\r\nI can help you access TradingView charts for a variety of assets, such as crypto, forex, stocks, indices, and futures.\r\n\r\nTo get started, simply type one of the following commands:\r\n\r\n/chart <exchange:symbol> <interval>\r\n/crypto\r\n/nasdaq\r\n/nyse\r\n/forex\r\n/cfd\r\n/example\r\n\r\nAPI Documentation:\r\ndoc.chart-img.com"
+      "text": "Merhaba,Ben  Majestic Trading Bot \uD83E\uDD16!\r\n\r\nBen Market Cipher indikatorunu kullanarak TradingView uzerinden  crypto, forex, borsa, degerli madenler, ve vadeli islem grafigi gonderiyorum.\r\n\r\nTo get started, simply type one of the following commands:\r\n\r\n/chart <exchange:symbol> <interval>\r\n/crypto\r\n/nasdaq\r\n/nyse\r\n/forex\r\n/cfd\r\n"
     },
     {
       "name": "/example",
