@@ -50,7 +50,7 @@ export function postTradingViewAdvancedChartRESTv2(apiKey, payload, opt = {}) {
  * @returns {Promise}
  */
 export function postTradingViewLayoutRESTv2(apiKey, payload, opt = {}) {
-  return postPayloadRESTv2('tradingview/btVPUeij', apiKey, payload, opt)
+  return postPayloadRESTv2('tradingview/layout-chart', apiKey, payload, opt)
 }
 
 /**
