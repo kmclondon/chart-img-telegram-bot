@@ -50,7 +50,7 @@ export function postTradingViewAdvancedChartRESTv2(apiKey, payload, opt = {}) {
  * @returns {Promise}
  */
 export function postTradingViewLayoutRESTv2(apiKey, payload, opt = {}) {
-  return postPayloadRESTv2('tradingview/layout-chart', apiKey, payload, opt)
+  return postPayloadRESTv2('tradingview/btVPUeij', apiKey, payload, opt)
 }
 
 /**
@@ -83,11 +83,13 @@ function postPayloadRESTv2(path, apiKey, payload, opt = {}) {
 
   const headers = {
     'x-api-key': apiKey,
+    'tradingview-session-id': '7sztuwjo4vjv7a88gg8rhvd3hbb1dyao',
+    'tradingview-session-id-sign' : 'MkSf/A3eC6c6OnJ7IDDmvnbji4+Ak7QI3q1vXeYCAvw=',
     'content-type': 'application/json',
   }
 
   if (opt.sessionId) {
-    headers['tradingview-session-id'] = opt.sessionId
+    headers['tradingview-session-id'] = "7sztuwjo4vjv7a88gg8rhvd3hbb1dyao"
   }
 
   return fetch(`${BASE_API_URL}/v2/${path}`, {
