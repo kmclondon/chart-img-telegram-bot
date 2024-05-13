@@ -505,6 +505,12 @@
       "text": "Ornek Olarak:\r\n/chart\r\n/chart nasdaq:aapl\r\n/chart binance:btcusdt 15m\r\n/chart capitalcom:gold 4h\r\n/chart <exchange:symbol> <interval>\r\n\r\nSupported intervals:\r\n1m,3m,5m,15m,30m,45m,1h,2h,3h,4h,1D,1W,1M,3M,6M,1Y\r\n\r\nDesteklenen exchange sembolleri:\r\ndoc.chart-img.com/#tradingview-symbols"
     }
   ],
-  "private.enabled" : false,
-  "group.allowFromIds": [-2137491315]
+  "private" : {
+    "enabled": true,
+    "allowFromIds" : [69102649]
+  },
+  "group":{
+    "enabled":true
+    "allowFromIds":[-2137491315]
+  }
 }
