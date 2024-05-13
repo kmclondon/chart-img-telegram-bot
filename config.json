@@ -8,12 +8,10 @@
       "theme": "dark",
       "studies": [
         {
-          "name": "MarketCipher_A",
-          "forceOverlay": true
+          "name": "MarketCipher_A"
         },
         {
-          "name": "MarketCipher_B",
-          "forceOverlay": true
+          "name": "MarketCipher_B"
         }       
       ]
     }
@@ -26,12 +24,10 @@
       "theme": "dark",
       "studies": [
         {
-          "name": "MarketCipher_A",
-          "forceOverlay": true
+          "name": "MarketCipher_A"
         },
         {
-          "name": "MarketCipher_B",
-          "forceOverlay": true
+          "name": "MarketCipher_B"
         }  
       ]
     },
