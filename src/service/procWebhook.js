@@ -1,7 +1,7 @@
 import log from '../helper/logger'
 import procCommand from './procCommand'
 import procCallbackData from './procCallback'
-import config from '../../config.json' assert   { type: 'json' }
+import config from '../../config.json' assert { type: 'json' }
 
 import { ChatType, ChatStatus } from '../enum/telegram'
 
