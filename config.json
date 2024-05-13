@@ -1,107 +1,267 @@
 {
-  "version": 1,
+  "version": 2,
   "/chart": {
     "intervals": ["5m", "15m", "1h", "4h", "1D", "1W"],
     "default": {
       "symbol": "BINANCE:BTCUSDT",
-      "interval": "1h",
-      "theme": "dark"
+      "interval": "1H",
+      "theme": "dark",
+      "studies": [
+        {
+          "name": "MarketCipher_A",
+          "forceOverlay": true
+        },
+        {
+          "name": "MarketCipher_B",
+          "forceOverlay": true
+        }       
+      ]
     }
   },
   "/crypto": {
     "intervals": ["5m", "15m", "1h", "4h", "1D", "1W"],
     "default": {
       "symbol": "BINANCE:BTCUSDT",
-      "interval": "1h",
-      "theme": "dark"
+      "interval": "1H",
+      "theme": "dark",
+      "studies": [
+        {
+          "name": "MarketCipher_A",
+          "forceOverlay": true
+        },
+        {
+          "name": "MarketCipher_B",
+          "forceOverlay": true
+        }  
+      ]
     },
     "inputs": [
       [
         {
           "text": "BTCUSDT",
           "symbol": "BINANCE:BTCUSDT",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "ETHUSDT",
           "symbol": "BINANCE:ETHUSDT",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "BNBUSDT",
           "symbol": "BINANCE:BNBUSDT",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "XRPUSDT",
           "symbol": "BINANCE:XRPUSDT",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "ADAUSDT",
           "symbol": "BINANCE:ADAUSDT",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "DOGEUSDT",
           "symbol": "BINANCE:DOGEUSDT",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "MATICUSDT",
           "symbol": "BINANCE:MATICUSDT",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "SOLUSDT",
           "symbol": "BINANCE:SOLUSDT",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         }
       ],
       [
         {
           "text": "DOTUSDT",
           "symbol": "BINANCE:DOTUSDT",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "LTCUSDT",
           "symbol": "BINANCE:LTCUSDT",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "SHIBUSDT",
           "symbol": "BINANCE:SHIBUSDT",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "TRXUSDT",
           "symbol": "BINANCE:TRXUSDT",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "AVAXUSDT",
           "symbol": "BINANCE:AVAXUSDT",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "LINKUSDT",
           "symbol": "BINANCE:LINKUSDT",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "ATOMUSDT",
           "symbol": "BINANCE:ATOMUSDT",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "XMRUSDT",
           "symbol": "BINANCE:XMRUSDT",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         }
       ]
     ]
@@ -111,95 +271,241 @@
     "default": {
       "symbol": "CAPITALCOM:US100",
       "interval": "1D",
-      "theme": "dark"
+      "theme": "dark",
+      "studies": [
+        {
+          "name": "Volume",
+          "forceOverlay": true
+        }
+      ]
     },
     "inputs": [
       [
         {
           "text": "AAPL",
           "symbol": "NASDAQ:AAPL",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "TSLA",
           "symbol": "NASDAQ:TSLA",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "MSFT",
           "symbol": "NASDAQ:MSFT",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "NVDA",
           "symbol": "NASDAQ:NVDA",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "AMZN",
           "symbol": "NASDAQ:AMZN",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "GOOGL",
           "symbol": "NASDAQ:GOOGL",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "META",
           "symbol": "NASDAQ:META",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "AMD",
           "symbol": "NASDAQ:AMD",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         }
       ],
       [
         {
           "text": "INTC",
           "symbol": "NASDAQ:INTC",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "NFLX",
           "symbol": "NASDAQ:NFLX",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "COIN",
           "symbol": "NASDAQ:COIN",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "PYPL",
           "symbol": "NASDAQ:PYPL",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "MRNA",
           "symbol": "NASDAQ:MRNA",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "ABNB",
           "symbol": "NASDAQ:ABNB",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "ADBE",
           "symbol": "NASDAQ:ADBE",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "COST",
           "symbol": "NASDAQ:COST",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         }
       ]
     ]
@@ -209,95 +515,241 @@
     "default": {
       "symbol": "NYSE:NYA",
       "interval": "1D",
-      "theme": "dark"
+      "theme": "dark",
+      "studies": [
+        {
+          "name": "Volume",
+          "forceOverlay": true
+        }
+      ]
     },
     "inputs": [
       [
         {
           "text": "BABA",
           "symbol": "NYSE:BABA",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "AMC",
           "symbol": "NYSE:AMC",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "GME",
           "symbol": "NYSE:GME",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "SQ",
           "symbol": "NYSE:SQ",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "DIS",
           "symbol": "NYSE:DIS",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "SHOP",
           "symbol": "NYSE:SHOP",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "XOM",
           "symbol": "NYSE:XOM",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "PFE",
           "symbol": "NYSE:PFE",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         }
       ],
       [
         {
           "text": "BA",
           "symbol": "NYSE:BA",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "TSM",
           "symbol": "NYSE:TSM",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "CRM",
           "symbol": "NYSE:CRM",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "KO",
           "symbol": "NYSE:KO",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "PFE",
           "symbol": "NYSE:PFE",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "BAC",
           "symbol": "NYSE:BAC",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "JPM",
           "symbol": "NYSE:JPM",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "F",
           "symbol": "NYSE:F",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         }
       ]
     ]
@@ -307,95 +759,241 @@
     "default": {
       "symbol": "CAPITALCOM:DXY",
       "interval": "1D",
-      "theme": "dark"
+      "theme": "dark",
+      "studies": [
+        {
+          "name": "Volume",
+          "forceOverlay": true
+        }
+      ]
     },
     "inputs": [
       [
         {
           "text": "EURUSD",
           "symbol": "FOREXCOM:EURUSD",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "GBPUSD",
           "symbol": "FOREXCOM:GBPUSD",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "AUDUSD",
           "symbol": "FOREXCOM:AUDUSD",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "USDJPY",
           "symbol": "FOREXCOM:USDJPY",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "GBPJPY",
           "symbol": "FOREXCOM:GBPJPY",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "USDCAD",
           "symbol": "FOREXCOM:USDCAD",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "EURJPY",
           "symbol": "FOREXCOM:EURJPY",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "USDCHF",
           "symbol": "FOREXCOM:USDCHF",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         }
       ],
       [
         {
           "text": "EURGBP",
           "symbol": "FOREXCOM:EURGBP",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "NZDUSD",
           "symbol": "FOREXCOM:NZDUSD",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "AUDJPY",
           "symbol": "FOREXCOM:AUDJPY",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "GBPAUD",
           "symbol": "FOREXCOM:GBPAUD",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "EURAUD",
           "symbol": "FOREXCOM:EURAUD",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "CADJPY",
           "symbol": "FOREXCOM:CADJPY",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "AUDCAD",
           "symbol": "FOREXCOM:AUDCAD",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         },
         {
           "text": "EURCAD",
           "symbol": "FOREXCOM:EURCAD",
-          "studies": ["BB", "MOM"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Bollinger Bands"
+            },
+            {
+              "name": "Momentum"
+            }
+          ]
         }
       ]
     ]
@@ -405,58 +1003,136 @@
     "default": {
       "symbol": "CAPITALCOM:GOLD",
       "interval": "1D",
-      "theme": "dark"
+      "theme": "dark",
+      "studies": [
+        {
+          "name": "Volume",
+          "forceOverlay": true
+        }
+      ]
     },
     "inputs": [
       [
         {
           "text": "GOLD",
           "symbol": "CAPITALCOM:GOLD",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "SILVER",
           "symbol": "CAPITALCOM:SILVER",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "COPPER",
           "symbol": "CAPITALCOM:COPPER",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         },
         {
           "text": "PLATINUM",
           "symbol": "CAPITALCOM:PLATINUM",
-          "studies": ["RSI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Relative Strength Index"
+            }
+          ]
         }
       ],
       [
         {
           "text": "UK SUGAR",
           "symbol": "CAPITALCOM:UKSUGAR",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "US COCOA",
           "symbol": "CAPITALCOM:USCOCOA",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         },
         {
           "text": "US COTTON",
           "symbol": "CAPITALCOM:USCOTTON",
-          "studies": ["MACD"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "MACD"
+            }
+          ]
         }
       ],
       [
         {
           "text": "NATURAL GAS",
           "symbol": "CAPITALCOM:NATURALGAS",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         },
         {
           "text": "CRUDE OIL",
           "symbol": "CAPITALCOM:OIL_CRUDE",
-          "studies": ["CCI"]
+          "studies": [
+            {
+              "name": "Volume",
+              "forceOverlay": true
+            },
+            {
+              "name": "Commodity Channel Index"
+            }
+          ]
         }
       ]
     ]
