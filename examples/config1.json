@@ -501,8 +501,8 @@
       "text": "Hello, I am CHART-IMG Bot \uD83E\uDD16!\r\n\r\nI can help you access TradingView charts for a variety of assets, such as crypto, forex, stocks, indices, and futures.\r\n\r\nTo get started, simply type one of the following commands:\r\n\r\n/chart <exchange:symbol> <interval>\r\n/crypto\r\n/nasdaq\r\n/nyse\r\n/forex\r\n/cfd\r\n/example\r\n\r\nAPI Documentation:\r\ndoc.chart-img.com"
     },
     {
-      "name": "/start",
-      "text": "Hello, I am CHART-IMG Bot \uD83E\uDD16!\r\n\r\nI can help you access TradingView charts for a variety of assets, such as crypto, forex, stocks, indices, and futures.\r\n\r\nTo get started, simply type one of the following commands:\r\n\r\n/chart <exchange:symbol> <interval>\r\n/crypto\r\n/nasdaq\r\n/nyse\r\n/forex\r\n/cfd\r\n/example\r\n\r\nAPI Documentation:\r\ndoc.chart-img.com"
+      "name": "/example",
+      "text": "Example:\r\n/chart\r\n/chart nasdaq:aapl\r\n/chart binance:btcusdt 15m\r\n/chart capitalcom:gold 4h\r\n/chart <exchange:symbol> <interval>\r\n\r\nSupported intervals:\r\n1m,3m,5m,15m,30m,45m,1h,2h,3h,4h,1D,1W,1M,3M,6M,1Y\r\n\r\nSupported exchange symbols:\r\ndoc.chart-img.com/#tradingview-symbols"
     }
   ]
 }
