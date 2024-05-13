@@ -510,7 +510,7 @@
     "allowFromIds" : [69102649]
   },
   "group":{
-    "enabled":true
+    "enabled":true,
     "allowFromIds":[-2137491315]
   }
 }
