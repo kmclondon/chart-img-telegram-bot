@@ -1,4 +1,4 @@
-name = "majesticchart-img-  -bot"
+name = "majestic-trading-bot"
 
 main = "src/index.js"
 compatibility_date = "2022-11-30"
