@@ -2,7 +2,7 @@ import log from './logger'
 import get from 'lodash.get'
 import omit from 'lodash.omit'
 
-import config from '../../config.json' assert  { type: 'json' }
+import config from '../../config.json' with   { type: 'json' }
 
 import {
   intervals,
