@@ -83,13 +83,7 @@ function postPayloadRESTv2(path, apiKey, payload, opt = {}) {
 
   const headers = {
     'x-api-key': apiKey,
-    'tradingview-session-id': '7sztuwjo4vjv7a88gg8rhvd3hbb1dyao',
-    'tradingview-session-id-sign' : 'MkSf/A3eC6c6OnJ7IDDmvnbji4+Ak7QI3q1vXeYCAvw=',
-    'content-type': 'application/json',
-  }
-
-  if (opt.sessionId) {
-    headers['tradingview-session-id'] = "7sztuwjo4vjv7a88gg8rhvd3hbb1dyao"
+    'content-type': 'application/json'
   }
 
   return fetch(`${BASE_API_URL}/v2/${path}`, {
