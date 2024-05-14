@@ -1,5 +1,5 @@
 import procError from './procError'
-import config from '../../config.json' assert   { type: 'json' }
+import config from '../../config.json' with   { type: 'json' }
 
 import { sendMessage, sendPhoto, sendChatAction } from '../helper/telegram'
 import { MessageNameNotFoundError } from '../error'
